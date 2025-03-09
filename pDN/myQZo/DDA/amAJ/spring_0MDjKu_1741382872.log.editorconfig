@@ -1,4 +1,3 @@
-root = true
 
 [*.{adoc,bat,groovy,html,java,js,jsp,kt,kts,md,properties,py,rb,sh,sql,svg,txt,xml,xsd}]
 charset = utf-8
