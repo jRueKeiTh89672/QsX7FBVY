@@ -1,0 +1,24 @@
+language: java
+jdk:
+  - openjdk11
+  - openjdk12
+  - openjdk13
+  - openjdk14
+  - openjdk15
+  - openjdk16
+  - openjdk17
+  - openjdk18
+  - openjdk19
+  
+services:
+  - xvfb
+  
+addons:
+  sonarcloud:
+    organization: "manolodd"
+    token:
+      secure: "iQGlEStyftOzqVRpcI7Cof1WRGQFuejeijk+eHS8CMt9VCH1KZepTYfrOoe5cF19noPcL7XLJNvsEpjzPMIZQkg16MFunykes6Wv5TMEifc+iGQeNhWgjTbFQI2yvS+bp9tjqcfDs4lCJWYUaP0ENbiBYQhaRXy6yvRCg9RMc3w="
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=manolodd_opensimmpls -Dsonar.scanner.force-deprecated-java-version=true
