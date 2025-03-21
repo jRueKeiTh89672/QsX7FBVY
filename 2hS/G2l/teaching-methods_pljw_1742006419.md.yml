@@ -15,7 +15,6 @@ services:
   
 addons:
   sonarcloud:
-    organization: "manolodd"
     token:
       secure: "iQGlEStyftOzqVRpcI7Cof1WRGQFuejeijk+eHS8CMt9VCH1KZepTYfrOoe5cF19noPcL7XLJNvsEpjzPMIZQkg16MFunykes6Wv5TMEifc+iGQeNhWgjTbFQI2yvS+bp9tjqcfDs4lCJWYUaP0ENbiBYQhaRXy6yvRCg9RMc3w="
 
