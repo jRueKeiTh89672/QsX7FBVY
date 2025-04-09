@@ -3,7 +3,6 @@
 
 # Open merge request automatically and run reviewdog against created MR.
 stages:
-  - openMr
   - reviewdog
 
 # https://github.com/tmaier/gitlab-auto-merge-request
